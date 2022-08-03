@@ -6,201 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Journey</title>
     <link href="./css/style.css" rel="stylesheet" />
-    <link href="./css/media.css" rel="stylesheet" />
-    <link href="./css/reset.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-[#F9F8F4]">
-    <nav class="border-gray-200 sticky top-0 z-50 menu px-2 sm:px-4 py-2.5">
+  <body>
+    <section class="flex flex-col p-24">
       <div
-        class="container flex flex-wrap justify-between items-center mx-auto"
+        class="flex items-center justify-center w-64 h-12 rounded-full bg-[#FFE9E5]"
       >
-        <a href="https://flowbite.com/" class="flex items-center">
-          <img
-            src="./img/LogoDesign.svg"
-            class="mr-3 h-10 sm:h-10"
-            alt="Neel Design Logo"
-          />
-        </a>
-        <div class="flex md:order-2">
-          <button
-            type="button"
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Get started
-          </button>
-          <button
-            data-collapse-toggle="navbar-cta"
-            type="button"
-            class="mobile-menu-button inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-cta"
-            aria-expanded="false"
-          >
-            <span class="sr-only">Open main menu</span>
-            <svg
-              class="w-6 h-6"
-              aria-hidden="true"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-        </div>
-        <!-- Mobile Menu -->
-        <div
-          class="mobile-menu md:hidden absolute top-0 inset-x-0 p-2 transition transform origin-top-right hidden"
-        >
-          <div
-            class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50"
-          >
-            <div class="pt-5 pb-6 px-5">
-              <div class="flex items-center justify-between">
-                <div>
-                  <img
-                    class="h-10 w-auto sm:h-10"
-                    src="./img/LogoDesign.svg"
-                    alt="Neel Design"
-                  />
-                </div>
-                <div class="-mr-2">
-                  <button
-                    type="button"
-                    class="close bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                  >
-                    <span class="sr-only">Close menu</span>
-                    <!-- Heroicon name: outline/x -->
-                    <svg
-                      class="h-6 w-6"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M6 18L18 6M6 6l12 12"
-                      ></path>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="py-6 px-5 space-y-6">
-              <div class="grid grid-cols-2 gap-y-4 gap-x-8">
-                <a
-                  href="#Home"
-                  class="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Home
-                </a>
-
-                <a
-                  href="#About"
-                  class="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  About
-                </a>
-
-                <a
-                  href="#Explore"
-                  class="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Explore
-                </a>
-                <a
-                  href="#Team"
-                  class="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  My Team
-                </a>
-                <a
-                  href="#Student"
-                  class="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Student
-                </a>
-                <a
-                  href="#Contact"
-                  class="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Contact us
-                </a>
-              </div>
-              <div>
-                <p class="mt-6 text-center text-base font-medium text-gray-500">
-                  <a
-                    href="tel:+91 9876543210"
-                    class="flex flex-col text-indigo-600 hover:text-indigo-500"
-                  >
-                    +91 8200841059
-                    <spna class="text-[#8C8C8C]">Neel Patel</spna>
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
-          id="navbar-cta"
-        >
-          <ul
-            class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"
-          >
-            <li>
-              <a
-                href="#"
-                class="block py-2 pr-4 pl-3 text-[#006241] rounded md:bg-transparent md:text-[#006241] md:p-0 dark:text-[#006241]"
-                aria-current="page"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pr-4 pl-3 text-[#006241] border-b border-gray-100 hover:bg-[#25262B] md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#25262B] dark:text-[#006241] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#25262B] dark:text-[#006241] dark:hover:bg-gray-700 dark:hover:text-[#25262B] md:dark:hover:bg-transparent dark:border-gray-700"
-                >Services</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-[#006241] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
+        <h1 class="text-[#C96852] font-bold">Our Business Journey</h1>
       </div>
-    </nav>
-    <section class="xl:p-24 mt-10 lg:mt-0 p-2">
-      <div class="lg:block flex items-center justify-center">
-        <div
-          class="flex items-center justify-center w-64 h-12 rounded-full bg-[#FFE9E5]"
-        >
-          <h1 class="text-[#C96852] font-bold">Our Business Journey</h1>
-        </div>
-      </div>
-      <div
-        class="py-8 px-2 flex lg:flex-row flex-col items-center justify-between"
-      >
-        <div class="lg:block flex lg:flex-row flex-col items-center">
+      <div class="py-8 px-2 flex items-center justify-between">
+        <div>
           <h1 class="text-3xl font-semibold text-[#1F1D29]">
             Upcoming Stories
           </h1>
@@ -209,7 +25,7 @@
           </p>
         </div>
 
-        <div class="flex items-center mt-4 lg:mt-0">
+        <div class="flex items-center">
           <button
             class="bg-[#E8EFFF] w-40 h-12 tracking-tight rounded-lg text-[#3D54A5] font-semibold text-md"
           >
@@ -217,79 +33,50 @@
           </button>
         </div>
       </div>
-      <!-- First Start -->
-      <div class="open_desc">
-        <div
-          class="lg:p-8 border border_color rounded-xl border-[#E2E2E2] border-2"
-        >
-          <div class="grid parent check">
-            <div
-              class="grid lg:grid-cols-2 p-2 items-center justify-items-center"
-            >
-              <div class="xl:-ml-40 lg:-ml-32">
+      <div class="main_class">
+        <div class="mt-8 open_desc">
+          <div
+            class="border_color p-10 border rounded-xl border-[#E2E2E2] border-2"
+          >
+            <div class="check flex justify-between">
+              <div class="flex items-center">
                 <div id="burst-12">
                   <span
-                    ><img class="lg:ml-2 lg:mt-2 w-20" src="./img/project2.svg"
+                    ><img class="ml-2 mt-1 w-16" src="./img/project2.svg"
                   /></span>
                 </div>
+                <div class="ml-20 flex flex-col">
+                  <h1 class="text-[#1F1D29] font-semibold text-2xl">
+                    Start Design Journey...
+                  </h1>
+                  <p class="mt-4 text-[#7D7D7D] text-sm">
+                    Upcoming Journey schedule not to be missed...!
+                  </p>
+                </div>
               </div>
-              <div class="xl:-ml-40 lg:-ml-20">
-                <h1
-                  class="text-[#1F1D29] font-semibold lg:text-start text-center text-xs lg:text-2xl lg:mt-0 mt-4"
-                >
-                  Start Design Journey...
-                </h1>
-                <p
-                  class="lg:mt-4 lg:block hidden mt-2 text-[#7D7D7D] text-xs lg:text-sm text-center"
-                >
-                  Upcoming Journey schedule not to be missed...!
-                </p>
-              </div>
-              <div class="xl:hidden lg:hidden block text-center">
-                <p class="mt-2 text-[#7D7D7D] text-[0.6rem] lg:text-sm">
-                  Upcoming Journey schedule not to be missed...!
-                </p>
-              </div>
-            </div>
-            <div class="flex justify-center p-4">
-              <span class="line"></span>
-            </div>
-            <div
-              class="grid lg:grid-cols-3 content-center justify-items-center"
-            >
-              <div>
-                <h1
-                  class="lg:text-7xl text-4xl text-[#C53334] strock-[#C53334] date"
-                >
-                  09
-                </h1>
-              </div>
-              <div>
-                <h1
-                  class="text-[#1F1D29] text-center font-semibold text-md lg:text-xl"
-                >
-                  November
-                </h1>
-                <p
-                  class="lg:mt-4 mt-2 font-semibold text-center text-[#7D7D7D] text-xs lg:text-sm"
-                >
-                  NOV-9 to NOV-12
-                </p>
-              </div>
-              <div class="mt-2">
-                <img
-                  class="arrow lg:h-10 lg:w-10 w-6 h-6 transition duration-300 rotate-180"
-                  src="./img/arrow.svg"
-                />
+
+              <div class="line"></div>
+              <div class="flex w-96 items-center">
+                <div>
+                  <h1 class="text-7xl date">9</h1>
+                </div>
+                <div class="ml-20 flex flex-col">
+                  <h1 class="text-[#1F1D29] font-semibold text-xl">November</h1>
+                  <p class="mt-4 font-semibold text-[#7D7D7D] text-sm">
+                    NOV-9 to NOV-12
+                  </p>
+                </div>
+                <div>
+                  <img
+                    class="arrow h-10 w-10 ml-20 transition duration-300 rotate-180"
+                    src="./img/arrow.svg"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="main_desc">
-            <div class="p-4">
-              <div class="lg:mt-10 lg:border-none border-t">
-                <p
-                  class="text-[#7D7D7D] font-regular tracking-tight lg:text-base text-xs lg:p-0"
-                >
+            <div class="main_desc">
+              <div class="mt-10">
+                <p class="text-[#7D7D7D] font-regular text-ms">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                   placerat magna ut lacinia rutrum. Phasell condimentum, auctor
                   sem cursus, volutpat justo. Cras vitae eleifend libero, sit
@@ -301,8 +88,8 @@
                   lacus.Proin et condimentum odio.
                 </p>
               </div>
-              <div class="mt-4 grid grid-cols-2 lg:p-0">
-                <p class="text-[#7D7D7D] font-regular lg:text-base text-xs">
+              <div class="mt-4 grid grid-cols-2">
+                <p class="text-[#7D7D7D] font-regular text-ms">
                   What an amzing exprience for creating to some new startup
                   product design. Look out our bring new project and if you like
                   our work so
@@ -319,81 +106,51 @@
             </div>
           </div>
         </div>
-      </div>
-      <!-- First End -->
-      <!-- Second Start -->
-      <div class="mt-8 open_desc">
-        <div
-          class="lg:p-8 border border_color rounded-xl border-[#E2E2E2] border-2"
-        >
-          <div class="grid parent check">
-            <div
-              class="grid lg:grid-cols-2 p-2 items-center justify-items-center"
-            >
-              <div class="xl:-ml-40 lg:-ml-32">
+        <!-- First End -->
+
+        <div class="mt-8 open_desc">
+          <div
+            class="border_color p-10 border rounded-xl border-[#E2E2E2] border-2"
+          >
+            <div class="check flex justify-between">
+              <div class="flex items-center">
                 <div id="burst-12-2">
                   <span
-                    ><img class="lg:ml-2 lg:mt-2 w-20" src="./img/project1.svg"
+                    ><img class="ml-2 mt-1 w-16" src="./img/project1.svg"
                   /></span>
                 </div>
+                <div class="ml-20 flex flex-col">
+                  <h1 class="text-[#1F1D29] font-semibold text-2xl">
+                    Create Design agency
+                  </h1>
+                  <p class="mt-4 text-[#7D7D7D] text-sm">
+                    Create website to show my skill to create design
+                  </p>
+                </div>
               </div>
-              <div class="xl:-ml-40 lg:-ml-20">
-                <h1
-                  class="text-[#1F1D29] font-semibold lg:text-start text-center text-xs lg:text-2xl lg:mt-0 mt-4"
-                >
-                  Create Design agency
-                </h1>
-                <p
-                  class="lg:mt-4 lg:block hidden mt-2 text-[#7D7D7D] text-xs lg:text-sm text-center"
-                >
-                  Create website to show my skill to create design
-                </p>
-              </div>
-              <div class="xl:hidden lg:hidden block text-center">
-                <p class="mt-2 text-[#7D7D7D] text-[0.6rem] lg:text-sm">
-                  Create website to show my skill to create design
-                </p>
-              </div>
-            </div>
-            <div class="flex justify-center p-4">
-              <span class="line"></span>
-            </div>
-            <div
-              class="grid lg:grid-cols-3 content-center justify-items-center"
-            >
-              <div>
-                <h1
-                  class="lg:text-7xl text-4xl date text-[#3261A3] strock-[#3261A3]"
-                >
-                  12
-                </h1>
-              </div>
-              <div>
-                <h1
-                  class="text-[#1F1D29] font-semibold text-center text-md lg:text-xl"
-                >
-                  November
-                </h1>
-                <p
-                  class="lg:mt-4 mt-2 font-semibold text-center text-[#7D7D7D] text-xs lg:text-sm"
-                >
-                  NOV-12 to NOV-15
-                </p>
-              </div>
-              <div class="mt-2">
-                <img
-                  class="arrow lg:h-10 lg:w-10 w-6 h-6 transition duration-300 rotate-180"
-                  src="./img/arrow.svg"
-                />
+
+              <div class="line"></div>
+              <div class="flex w-96 items-center">
+                <div>
+                  <h1 class="text-5xl date">12</h1>
+                </div>
+                <div class="ml-20 flex flex-col">
+                  <h1 class="text-[#1F1D29] font-semibold text-xl">November</h1>
+                  <p class="mt-4 font-semibold text-[#7D7D7D] text-sm">
+                    NOV-12 to NOV-15
+                  </p>
+                </div>
+                <div>
+                  <img
+                    class="arrow h-10 w-10 ml-20 transition duration-300 rotate-180"
+                    src="./img/arrow.svg"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="main_desc">
-            <div class="p-4">
-              <div class="lg:mt-10 lg:border-none border-t">
-                <p
-                  class="text-[#7D7D7D] font-regular tracking-tight lg:text-base text-xs lg:p-0"
-                >
+            <div class="main_desc">
+              <div class="mt-10">
+                <p class="text-[#7D7D7D] font-regular text-ms">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                   placerat magna ut lacinia rutrum. Phasell condimentum, auctor
                   sem cursus, volutpat justo. Cras vitae eleifend libero, sit
@@ -405,8 +162,8 @@
                   lacus.Proin et condimentum odio.
                 </p>
               </div>
-              <div class="mt-4 grid grid-cols-2 lg:p-0">
-                <p class="text-[#7D7D7D] font-regular lg:text-base text-xs">
+              <div class="mt-4 grid grid-cols-2">
+                <p class="text-[#7D7D7D] font-regular text-ms">
                   What an amzing exprience for creating to some new startup
                   product design. Look out our bring new project and if you like
                   our work so
@@ -423,83 +180,52 @@
             </div>
           </div>
         </div>
-      </div>
-      <!-- Second End -->
-      <!-- Third Start -->
-      <div class="mt-8 open_desc">
-        <div
-          class="lg:p-8 border border_color rounded-xl border-[#E2E2E2] border-2"
-        >
-          <div class="grid parent check">
-            <div
-              class="grid lg:grid-cols-2 p-2 items-center justify-items-center"
-            >
-              <div class="xl:-ml-40 lg:-ml-32">
+        <!-- Second End -->
+        <div class="mt-8 open_desc">
+          <div
+            class="border_color p-10 border rounded-xl border-[#E2E2E2] border-2"
+          >
+            <div class="check flex justify-between">
+              <div class="flex items-center">
                 <div id="burst-12-3">
                   <span
-                    ><img
-                      class="lg:ml-2 lg:mt-2 lg:w-16"
-                      src="./img/project4.svg"
+                    ><img class="ml-2 mt-1 w-16" src="./img/project4.svg"
                   /></span>
                 </div>
+                <div class="ml-20 flex flex-col">
+                  <h1 class="text-[#1F1D29] font-semibold text-2xl">
+                    Design local business
+                  </h1>
+                  <p class="mt-4 text-[#7D7D7D] text-sm">
+                    Build design for new startups and small business
+                  </p>
+                </div>
               </div>
-              <div class="xl:-ml-40 lg:-ml-20">
-                <h1
-                  class="text-[#1F1D29] font-semibold lg:text-start text-center text-xs lg:text-2xl lg:mt-0 mt-4"
-                >
-                  Design local business
-                </h1>
-                <p
-                  class="lg:mt-4 lg:block hidden mt-2 text-[#7D7D7D] text-xs lg:text-sm text-center"
-                >
-                  Build design for new startups and small business
-                </p>
-              </div>
-              <div class="xl:hidden lg:hidden block text-center">
-                <p class="mt-2 text-[#7D7D7D] text-[0.6rem] lg:text-sm">
-                  Build design for new startups and small business
-                </p>
-              </div>
-            </div>
-            <div class="flex justify-center p-4">
-              <span class="line"></span>
-            </div>
-            <div
-              class="grid lg:grid-cols-3 content-center justify-items-center"
-            >
-              <div>
-                <h1
-                  class="lg:text-7xl text-4xl date text-[#C53334] strock-[#C53334]"
-                >
-                  20
-                </h1>
-              </div>
-              <div>
-                <h1
-                  class="text-[#1F1D29] text-center font-semibold text-md lg:text-xl"
-                >
-                  November
-                </h1>
-                <p
-                  class="lg:mt-4 mt-2 font-semibold text-center text-[#7D7D7D] text-xs lg:text-sm"
-                >
-                  NOV-20 to NOV-30
-                </p>
-              </div>
-              <div class="mt-2">
-                <img
-                  class="arrow lg:h-10 lg:w-10 w-6 h-6 transition duration-300 rotate-180"
-                  src="./img/arrow.svg"
-                />
+
+              <div class="line"></div>
+              <div class="flex w-96 items-center">
+                <div>
+                  <h1 class="text-5xl date">20</h1>
+                </div>
+                <div class="ml-20 flex flex-col">
+                  <h1 class="text-[#1F1D29] font-semibold text-xl">November</h1>
+                  <p
+                    class="mt-4 tracking-tighter text-sm font-semibold text-[#7D7D7D]"
+                  >
+                    NOV-20 to End
+                  </p>
+                </div>
+                <div>
+                  <img
+                    class="arrow h-10 w-10 ml-20 transition duration-300 rotate-180"
+                    src="./img/arrow.svg"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="main_desc">
-            <div class="p-4">
-              <div class="lg:mt-10 lg:border-none border-t">
-                <p
-                  class="text-[#7D7D7D] font-regular tracking-tight lg:text-base text-xs lg:p-0"
-                >
+            <div class="main_desc">
+              <div class="mt-10">
+                <p class="text-[#7D7D7D] font-regular text-ms">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                   placerat magna ut lacinia rutrum. Phasell condimentum, auctor
                   sem cursus, volutpat justo. Cras vitae eleifend libero, sit
@@ -511,8 +237,8 @@
                   lacus.Proin et condimentum odio.
                 </p>
               </div>
-              <div class="mt-4 grid grid-cols-2 lg:p-0">
-                <p class="text-[#7D7D7D] font-regular lg:text-base text-xs">
+              <div class="mt-4 grid grid-cols-2">
+                <p class="text-[#7D7D7D] font-regular text-ms">
                   What an amzing exprience for creating to some new startup
                   product design. Look out our bring new project and if you like
                   our work so
@@ -529,83 +255,53 @@
             </div>
           </div>
         </div>
-      </div>
-      <!-- Third End -->
-      <!-- Fourth Start -->
-      <div class="mt-8 open_desc">
-        <div
-          class="lg:p-8 border border_color rounded-xl border-[#E2E2E2] border-2"
-        >
-          <div class="grid parent check">
-            <div
-              class="grid lg:grid-cols-2 p-2 items-center justify-items-center"
-            >
-              <div class="xl:-ml-40 lg:-ml-32">
+        <!-- Third End -->
+
+        <div class="mt-8 open_desc">
+          <div
+            class="border_color p-10 border rounded-xl border-[#E2E2E2] border-2"
+          >
+            <div class="check flex justify-between">
+              <div class="flex items-center">
                 <div id="burst-12-4">
                   <span
-                    ><img
-                      class="lg:ml-2 lg:mt-2 lg:w-16"
-                      src="./img/jounry.svg"
+                    ><img class="ml-2 mt-1 w-16" src="./img/jounry.svg"
                   /></span>
                 </div>
+                <div class="ml-20 flex flex-col">
+                  <h1 class="text-[#1F1D29] font-semibold text-2xl">
+                    Started New Services
+                  </h1>
+                  <p class="mt-4 text-[#7D7D7D] text-sm">
+                    Other New Services just started few month ago!.
+                  </p>
+                </div>
               </div>
-              <div class="xl:-ml-40 lg:-ml-20">
-                <h1
-                  class="text-[#1F1D29] font-semibold lg:text-start text-center text-xs lg:text-2xl lg:mt-0 mt-4"
-                >
-                  Started New Services
-                </h1>
-                <p
-                  class="lg:mt-4 lg:block hidden mt-2 text-[#7D7D7D] text-xs lg:text-sm text-center"
-                >
-                  Other New Services just started few month ago!.
-                </p>
-              </div>
-              <div class="xl:hidden lg:hidden block text-center">
-                <p class="mt-2 text-[#7D7D7D] text-[0.6rem] lg:text-sm">
-                  Other New Services just started few month ago!.
-                </p>
-              </div>
-            </div>
-            <div class="flex justify-center p-4">
-              <span class="line"></span>
-            </div>
-            <div
-              class="grid lg:grid-cols-3 content-center justify-items-center"
-            >
-              <div>
-                <h1
-                  class="lg:text-7xl text-4xl date text-[#173C70] strock-2 fill-white strock-[#173C70]"
-                >
-                  10
-                </h1>
-              </div>
-              <div>
-                <h1
-                  class="text-[#1F1D29] text-center font-semibold text-md lg:text-xl"
-                >
-                  December
-                </h1>
-                <p
-                  class="lg:mt-4 mt-2 font-semibold text-center text-[#7D7D7D] text-xs lg:text-sm"
-                >
-                  DEC-10 to Till
-                </p>
-              </div>
-              <div class="mt-2">
-                <img
-                  class="arrow lg:h-10 lg:w-10 w-6 h-6 transition duration-300 rotate-180"
-                  src="./img/arrow.svg"
-                />
+
+              <div class="line"></div>
+              <div class="flex w-96 items-center">
+                <div>
+                  <h1 class="text-5xl date">10</h1>
+                </div>
+                <div class="ml-20 flex flex-col">
+                  <h1 class="text-[#1F1D29] font-semibold text-xl">December</h1>
+                  <p
+                    class="mt-4 tracking-tighter text-sm font-semibold text-[#7D7D7D]"
+                  >
+                    DEC-10 to Till
+                  </p>
+                </div>
+                <div>
+                  <img
+                    class="arrow h-10 w-10 ml-20 transition duration-300 rotate-180"
+                    src="./img/arrow.svg"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="main_desc">
-            <div class="p-4">
-              <div class="lg:mt-10 lg:border-none border-t">
-                <p
-                  class="text-[#7D7D7D] font-regular tracking-tight lg:text-base text-xs lg:p-0"
-                >
+            <div class="main_desc">
+              <div class="mt-10">
+                <p class="text-[#7D7D7D] font-regular text-ms">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                   placerat magna ut lacinia rutrum. Phasell condimentum, auctor
                   sem cursus, volutpat justo. Cras vitae eleifend libero, sit
@@ -617,8 +313,8 @@
                   lacus.Proin et condimentum odio.
                 </p>
               </div>
-              <div class="mt-4 grid grid-cols-2 lg:p-0">
-                <p class="text-[#7D7D7D] font-regular lg:text-base text-xs">
+              <div class="mt-4 grid grid-cols-2">
+                <p class="text-[#7D7D7D] font-regular text-ms">
                   What an amzing exprience for creating to some new startup
                   product design. Look out our bring new project and if you like
                   our work so
@@ -635,10 +331,9 @@
             </div>
           </div>
         </div>
+        <!-- Fourth End -->
       </div>
-      <!-- Fourth End -->
     </section>
     <script src="./js/journey.js"></script>
-    <script src="./js/nav.js"></script>
   </body>
 </html>
