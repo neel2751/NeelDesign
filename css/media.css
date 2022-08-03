@@ -1,0 +1,302 @@
+.parent {
+    grid-template-columns: 1fr 3rem 1fr;
+    /* grid-auto-flow: column; */
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 50px; */
+  }
+  .child {
+    grid-template-columns: 10rem 1fr;
+  }
+  @media screen and (max-width: 992px) {
+    #burst-12 {
+        background: #FFCAAA;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        text-align: center;
+        border-radius: 5px;
+    }
+    #burst-12:before, #burst-12:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+        height: 40px;
+        width: 40px;
+        background: #FFCAAA;
+    }
+    #burst-12:before {
+        transform: rotate(30deg);
+           -moz-transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+             -o-transform: rotate(30deg);
+    }
+    #burst-12:after {
+        transform: rotate(60deg);
+           -moz-transform: rotate(60deg);
+            -ms-transform: rotate(60deg);
+             -o-transform: rotate(60deg);
+    }
+    
+    
+    #burst-12-2 span img{
+        position: relative;
+        display: block;
+        z-index: 10;
+    }
+    #burst-12-2 {
+        background: #A9DFFF;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        text-align: center;
+        border-radius: 5px;
+    }
+    #burst-12-2:before, #burst-12-2:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+        height: 40px;
+        width: 40px;
+        background: #A9DFFF;
+    }
+    #burst-12-2:before {
+        transform: rotate(30deg);
+           -moz-transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+             -o-transform: rotate(30deg);
+    }
+    #burst-12-2:after {
+        transform: rotate(60deg);
+           -moz-transform: rotate(60deg);
+            -ms-transform: rotate(60deg);
+             -o-transform: rotate(60deg);
+    }
+    #burst-12-3 span img{
+        position: relative;
+        display: block;
+        z-index: 10;
+    }
+    
+    #burst-12-3 {
+        background: #FFA8AA;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        text-align: center;
+        border-radius: 5px;
+    }
+    #burst-12-3:before, #burst-12-3:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+        height: 40px;
+        width: 40px;
+        background: #FFA8AA;
+    }
+    #burst-12-3:before {
+        transform: rotate(30deg);
+           -moz-transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+             -o-transform: rotate(30deg);
+    }
+    #burst-12-3:after {
+        transform: rotate(60deg);
+           -moz-transform: rotate(60deg);
+            -ms-transform: rotate(60deg);
+             -o-transform: rotate(60deg);
+    }
+    #burst-12-4 span img{
+        position: relative;
+        display: block;
+        z-index: 10;
+    }
+    
+    #burst-12-4 {
+        background: #AABDFF;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        text-align: center;
+        border-radius: 5px;
+    }
+    #burst-12-4:before, #burst-12-4:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+        height: 40px;
+        width: 40px;
+        background: #AABDFF;
+    }
+    #burst-12-4:before {
+        transform: rotate(30deg);
+           -moz-transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+             -o-transform: rotate(30deg);
+    }
+    #burst-12-4:after {
+        transform: rotate(60deg);
+           -moz-transform: rotate(60deg);
+            -ms-transform: rotate(60deg);
+             -o-transform: rotate(60deg);
+    }
+  }
+
+  /* On screens that are 600px wide or less, the background color is olive */
+  @media screen and (max-width: 600px) {
+    #burst-12 {
+        background: #FFCAAA;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        text-align: center;
+        border-radius: 5px;
+    }
+    #burst-12:before, #burst-12:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+        height: 40px;
+        width: 40px;
+        background: #FFCAAA;
+    }
+    #burst-12:before {
+        transform: rotate(30deg);
+           -moz-transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+             -o-transform: rotate(30deg);
+    }
+    #burst-12:after {
+        transform: rotate(60deg);
+           -moz-transform: rotate(60deg);
+            -ms-transform: rotate(60deg);
+             -o-transform: rotate(60deg);
+    }
+    
+    
+    #burst-12-2 span img{
+        position: relative;
+        display: block;
+        z-index: 10;
+    }
+    #burst-12-2 {
+        background: #A9DFFF;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        text-align: center;
+        border-radius: 5px;
+    }
+    #burst-12-2:before, #burst-12-2:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+        height: 40px;
+        width: 40px;
+        background: #A9DFFF;
+    }
+    #burst-12-2:before {
+        transform: rotate(30deg);
+           -moz-transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+             -o-transform: rotate(30deg);
+    }
+    #burst-12-2:after {
+        transform: rotate(60deg);
+           -moz-transform: rotate(60deg);
+            -ms-transform: rotate(60deg);
+             -o-transform: rotate(60deg);
+    }
+    
+    
+    #burst-12-3 span img{
+        position: relative;
+        display: block;
+        z-index: 10;
+    }
+    
+    #burst-12-3 {
+        background: #FFA8AA;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        text-align: center;
+        border-radius: 5px;
+    }
+    #burst-12-3:before, #burst-12-3:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+        height: 40px;
+        width: 40px;
+        background: #FFA8AA;
+    }
+    #burst-12-3:before {
+        transform: rotate(30deg);
+           -moz-transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+             -o-transform: rotate(30deg);
+    }
+    #burst-12-3:after {
+        transform: rotate(60deg);
+           -moz-transform: rotate(60deg);
+            -ms-transform: rotate(60deg);
+             -o-transform: rotate(60deg);
+    }
+    
+    
+    
+    
+    #burst-12-4 span img{
+        position: relative;
+        display: block;
+        z-index: 10;
+    }
+    
+    #burst-12-4 {
+        background: #AABDFF;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        text-align: center;
+        border-radius: 5px;
+    }
+    #burst-12-4:before, #burst-12-4:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+        height: 40px;
+        width: 40px;
+        background: #AABDFF;
+    }
+    #burst-12-4:before {
+        transform: rotate(30deg);
+           -moz-transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+             -o-transform: rotate(30deg);
+    }
+    #burst-12-4:after {
+        transform: rotate(60deg);
+           -moz-transform: rotate(60deg);
+            -ms-transform: rotate(60deg);
+             -o-transform: rotate(60deg);
+    }
+  }
