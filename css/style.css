@@ -20,6 +20,7 @@ input{
 }
 input, select, textarea{
     color: #25262B;
+    font-weight: 600;
 }
 input:focus{
     outline: none;
