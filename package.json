@@ -1,0 +1,27 @@
+{
+  "name": "neel-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "postcss.config.js",
+  "dependencies": {
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.7",
+    "vite": "^3.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "vite",
+    "build" : "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neel2751/NeelDesign.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neel2751/NeelDesign/issues"
+  },
+  "homepage": "https://github.com/neel2751/NeelDesign#readme"
+}
