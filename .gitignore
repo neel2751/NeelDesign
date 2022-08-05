@@ -1,5 +1,3 @@
 node_modules/*
-package-lock.json
-package.json
-postcss.config.js
-tailwind.config.js
+img
+base64
