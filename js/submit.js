@@ -8,3 +8,10 @@ const scriptURL =
                     .then((response) => console.log("Success!", response))
                     .catch((error) => console.error("Error!", error.message));
 });
+const nform = document.forms["submit-newsletter"];
+        nform.addEventListener("submit", (e) => {
+                  e.preventDefault();
+                  fetch(scriptURL, { method: "POST", body: new FormData(nform) })
+                    .then((response) => console.log("Success!", response))
+                    .catch((error) => console.error("Error!", error.message));
+});
