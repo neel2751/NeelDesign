@@ -1,3 +1,6 @@
 node_modules/*
 img
 base64
+term.html
+get.html
+.gitignore

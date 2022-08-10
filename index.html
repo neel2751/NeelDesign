@@ -3,7 +3,8 @@
   <head>
     <title>Neel Design Studio</title>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="Description"
@@ -13,6 +14,8 @@
       name="keywords"
       content="Free Digital Marketing, StartUp for Website Design, Mobile App Design, UI/UX, illustrations, SEO"
     />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <meta name="robots" content="all" />
 
     <!--  Essential META Tags -->
     <meta property="og:title" content="Create Website for startups" />
@@ -631,24 +634,30 @@
             <div
               class="relative flex p-1 2xl:w-3/6 xl:w-4/6 w-full rounded bg-white border md:p-2"
             >
-              <input
-                placeholder="Enter Your Email"
-                class="lg:w-72 p-4 rounded-full"
-                type="text"
-              />
-              <button
-                type="button"
-                title="Let's Rock"
-                class="text-center transition"
-              >
-                <span class="hidden w-20 text-[#474A59] font-semibold md:block">
-                  Get Start
-                </span>
-                <img
-                  class="w-8 mx-auto md:hidden"
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjkiIGhlaWdodD0iMzkiIHZpZXdCb3g9IjAgMCA2OSAzOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQgMTkuMDM3SDYyTTYyIDE5LjAzN0M1OS40OTM4IDE3LjYwNDkgNTIuOTc3OCAxMi41OTI2IDQ2Ljk2MyA0TTYyIDE5LjAzN0M1OC40MTk4IDIxLjU0MzIgNTAuNCAyOC4yNzQxIDQ2Ljk2MyAzNS4xNDgxIiBzdHJva2U9IiM0NzRBNTkiIHN0cm9rZS13aWR0aD0iNi40NDQ0NCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cjwvc3ZnPgo="
+              <form name="submit-email">
+                <input
+                  placeholder="Enter Your Email"
+                  class="lg:w-72 p-4 rounded-full"
+                  type="email"
+                  name="Email"
+                  required
                 />
-              </button>
+                <button
+                  type="submit"
+                  title="Let's Rock"
+                  class="text-center transition"
+                >
+                  <span
+                    class="hidden w-20 text-[#474A59] font-semibold md:block"
+                  >
+                    Get Start
+                  </span>
+                  <img
+                    class="w-8 mx-auto md:hidden"
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjkiIGhlaWdodD0iMzkiIHZpZXdCb3g9IjAgMCA2OSAzOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQgMTkuMDM3SDYyTTYyIDE5LjAzN0M1OS40OTM4IDE3LjYwNDkgNTIuOTc3OCAxMi41OTI2IDQ2Ljk2MyA0TTYyIDE5LjAzN0M1OC40MTk4IDIxLjU0MzIgNTAuNCAyOC4yNzQxIDQ2Ljk2MyAzNS4xNDgxIiBzdHJva2U9IiM0NzRBNTkiIHN0cm9rZS13aWR0aD0iNi40NDQ0NCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cjwvc3ZnPgo="
+                  />
+                </button>
+              </form>
             </div>
             <!-- <button type="button" class="self-start">Action</button> -->
           </div>
@@ -866,7 +875,8 @@
                   class="ml-2 text-sm font-medium text-gray-300"
                   >I agree with the
                   <a
-                    href="#"
+                    target="_blank"
+                    href="https://neel2751.github.io/NeelDesign/terms.html"
                     class="text-blue-600 dark:text-blue-500 hover:underline"
                     >terms and conditions</a
                   >.</label
@@ -874,27 +884,32 @@
               </div>
             </div>
             <div class="search-conatiner">
-              <input
-                class="flex mt-8 lg:w-3/6 h-14 w-full rounded bg-white border p-6"
-                placeholder="Enter Your Email"
-              />
-
-              <div id="button" class="mt-4 md:mt-8">
-                <a
-                  href="#"
-                  class="relative inline-block group focus:outline-none focus:ring focus:ring-yellow-400"
-                >
-                  <span
-                    class="relative z-10 block px-12 py-3 text-sm font-medium text-white transition bg-gray-900 rounded group-hover:scale-105"
+              <form name="submit-email">
+                <input
+                  class="flex mt-8 lg:w-3/6 h-14 w-full rounded bg-white border p-6"
+                  placeholder="Enter Your Email"
+                  type="email"
+                  name="Email"
+                  required
+                />
+                <!-- <button type="submit">Send</button> -->
+                <div id="button" class="mt-4 md:mt-8">
+                  <button
+                    type="submit"
+                    class="relative inline-block group focus:outline-none focus:ring focus:ring-yellow-400"
                   >
-                    Get Started Today
-                  </span>
+                    <span
+                      class="relative z-10 block px-12 py-3 text-sm font-medium text-white transition bg-gray-900 rounded group-hover:scale-105"
+                    >
+                      Get Started Today
+                    </span>
 
-                  <span
-                    class="absolute inset-0 transition scale-105 rounded bg-gray-900/25 -rotate-3 group-hover:rotate-0"
-                  ></span>
-                </a>
-              </div>
+                    <span
+                      class="absolute inset-0 transition scale-105 rounded bg-gray-900/25 -rotate-3 group-hover:rotate-0"
+                    ></span>
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -1727,5 +1742,6 @@
     </section>
     <script src="./js/nav.js" type="module"></script>
     <script src="./js/arrow.js" type="module"></script>
+    <script src="./js/submit.js" type="module"></script>
   </body>
 </html>
