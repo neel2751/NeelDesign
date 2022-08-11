@@ -5,13 +5,24 @@ const scriptURL =
         form.addEventListener("submit", (e) => {
                   e.preventDefault();
                   fetch(scriptURL, { method: "POST", body: new FormData(form) })
-                    .then((response) => console.log("Success!", response))
+                    .then((response) => {
+                        alert('Submit Successfully!');
+                        form.reset();
+                        console.log("Success!", response)})
                     .catch((error) => console.error("Error!", error.message));
 });
 const nform = document.forms["submit-newsletter"];
         nform.addEventListener("submit", (e) => {
                   e.preventDefault();
                   fetch(scriptURL, { method: "POST", body: new FormData(nform) })
-                    .then((response) => console.log("Success!", response))
+                  .then((response) => {
+                    alert('Submit Successfully!');
+                    nform.reset();
+                    console.log("Success!", response)})
                     .catch((error) => console.error("Error!", error.message));
 });
+
+
+const naigator = document.querySelector(".navigator").offsetHeight;
+document.documentElement.style.setProperty('--scroll-padding', naigator - 1 + "px");
+

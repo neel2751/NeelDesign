@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap');
 
+html{
+    transition: all 5s ease;
+    scroll-behavior: smooth;
+    scroll-padding-top: var(-scroll-padding, 55px);
+}
+
 body{
     font-family: 'Sora', sans-serif;
     transition: all 1s ease-in-out;
